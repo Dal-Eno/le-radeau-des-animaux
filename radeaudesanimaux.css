@@ -15,6 +15,12 @@ nav ul {
     display: flex;
     justify-content: space-around;
     position: relative;
+    align-items: center;
+}
+nav ul li a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 nav ul li {
     display: inline;
@@ -47,7 +53,7 @@ nav ul li ul.dropdown a:hover{
 }
 
 nav ul li a:hover{
-    color: aquamarine;
+    color: rgb(255, 255, 255);
 }
 nav ul li:hover ul.dropdown{
     display: block;
