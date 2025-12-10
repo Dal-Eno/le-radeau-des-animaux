@@ -90,7 +90,9 @@ footer a img{
     width: 100px;
     height: 100px;
 }
-
+.logo a img{
+    border-radius: 50%;
+}
 .reseauxsociaux img{
     width: 50px;
     height: auto;
