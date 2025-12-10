@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/*NAV = CONTENU DU MENU*/
 nav{
     background: rgb(168, 193, 193) ;
     padding: 1rem;
@@ -57,4 +57,41 @@ nav ul li a:hover{
 }
 nav ul li:hover ul.dropdown{
     display: block;
+}
+
+
+
+
+/*BODY → CONTENU DE LA PAGE*/
+
+html, body {
+    height: 100%;
+}
+body{
+    display :flex;
+    flex-direction: column;
+}
+
+.content{
+    flex:1; /*le contenu prend tout l'espace dispo*/
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color:rgb(168, 193, 193) ;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a img{
+    width: 100px;
+    height: 100px;
+}
+
+.reseauxsociaux img{
+    width: 50px;
+    height: auto;
 }
