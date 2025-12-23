@@ -8,7 +8,10 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            ☰
+        </button>
+        <ul class="menu">
             <li><a href="radeaudesanimaux.html">
             <img src="images/Logo.webp" class="logo_img"/></a>
             </li>
@@ -50,6 +53,25 @@
             <li><a href="faire-un-don.html">Faire un Don</a></li>
         </ul>
     </nav>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        // Sous-menus au clic (mobile)
+        document.querySelectorAll('.menu > li > a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const submenu = this.nextElementSibling;
+                if (submenu && submenu.tagName === 'UL') {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        });
+    </script>
     
     <div class="content">
         <h1>Comment nous aider</h1>
