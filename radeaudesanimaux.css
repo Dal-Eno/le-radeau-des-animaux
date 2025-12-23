@@ -84,6 +84,72 @@ nav ul li ul.sousmenu2 li a:hover {
 
 
 
+
+/* Bouton hamburger */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+
+    nav {
+        position: relative;
+    }
+
+    /* Affiche le bouton */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Menu caché par défaut */
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        background: rgb(168, 193, 193);
+        width: 100%;
+    }
+
+    /* Menu visible quand actif */
+    nav ul.menu.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li ul.dropdown,
+    nav ul li ul.sousmenu2 {
+        position: static;
+        display: none;
+        background: rgb(21, 21, 21);
+    }
+
+    nav ul li.open > ul {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*BODY → CONTENU DE LA PAGE*/
 
 html, body {
