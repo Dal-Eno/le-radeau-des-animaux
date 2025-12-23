@@ -95,6 +95,182 @@ nav ul li ul.sousmenu2 li a:hover {
     color: black;
 }
 
+
+
+
+
+/*BODY → CONTENU DE LA PAGE*/
+
+html, body {
+    height: 100%;
+}
+body{
+    display :flex;
+    flex-direction: column;
+}
+
+.content{
+    flex:1; /*le contenu prend tout l'espace dispo*/
+}
+
+
+
+
+
+
+
+
+
+
+.accueil_titre{
+    height: 800px;
+    background-image: url("images/rda(22).webp");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Titre */
+.accueil_titre h1 {
+    position: relative;   
+    z-index: 2;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.accueil_titre::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+
+.bloc_centre {
+    background: white;
+    padding: 5% 20% 0% 20%;
+}
+
+.accueil_texte_refuge h2{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+.accueil_img_calendrier {
+    width: 100%;
+    height: auto;
+}
+.accueil_texte_calendrier{
+    text-align: center;
+}
+.accueil_texte_sous_image{
+    color: gray;
+    font-size: 14px;
+}
+.accueil_categorie_animaux{
+    display: flex;
+}
+
+.accueil_icone_chien{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color:rgb(168, 193, 193) ;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a img{
+    width: 100px;
+    height: 100px;
+}
+.logo a img{
+    border-radius: 50%;
+}
+.reseauxsociaux img{
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media screen and (max-width: 700px) {
 
@@ -134,54 +310,8 @@ nav ul li ul.sousmenu2 li a:hover {
     nav ul li.open > ul {
         display: block;
     }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*BODY → CONTENU DE LA PAGE*/
-
-html, body {
-    height: 100%;
-}
-body{
-    display :flex;
-    flex-direction: column;
-}
-
-.content{
-    flex:1; /*le contenu prend tout l'espace dispo*/
-}
-
-
-/*FOOTER*/
-
-footer{
-    background-color:rgb(168, 193, 193) ;
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-around;
-}
-footer a img{
-    width: 100px;
-    height: 100px;
-}
-.logo a img{
-    border-radius: 50%;
-}
-.reseauxsociaux img{
-    width: 50px;
-    height: auto;
+    .bloc_centre{
+        padding: 25px 10px;
+    }
 }
