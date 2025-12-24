@@ -155,19 +155,48 @@ body{
 
 .bloc_centre {
     background: white;
-    padding: 5% 20% 0% 20%;
+    padding: 0% 20% 0% 20%;
+}
+.espaceur50{
+    height: 50px;
+    background-color: transparent;
+}
+.espaceur100{
+    height: 100px;
+    background-color: transparent;
+}
+.lien{
+    color: rgb(255, 72, 0);
 }
 
+
+
+
+
+
+
 .accueil_texte_refuge h2{
-    padding: 10px 0;
     font-size: 2rem;
+    background-color: rgb(168, 193, 193);
+    padding: 7px 2px;
+}
+.accueil_texte_refuge h2{
+    background-color: rgb(168, 193, 193);
+    padding: 7px 2px;
+}
+
+.accueil_calendrier{
+    display: flex;
+    background-color:rgb(168, 193, 193);
+    padding: 10px 20%;
+    align-items: center;
 }
 .accueil_img_calendrier {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 .accueil_texte_calendrier{
-    text-align: center;
+    margin: 20px;
 }
 .accueil_texte_sous_image{
     color: gray;
@@ -175,25 +204,156 @@ body{
 }
 .accueil_categorie_animaux{
     display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.accueil_icone_chien{
-    width: 100px;
+.accueil_categorie_chien{
+    width: 50%;
+}
+.accueil_categorie_chat{
+    width: 50%;
+}
+.accueil_icone{
+    height: 100px;
+    width: auto;
 }
 
+.btn_bleu{
+    background-color: rgb(168, 193, 193);
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;  
+}
+.accueil_combat_maltraitance h2{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+.accueil_combat_maltraitance h2{
+    background-color: rgb(168, 193, 193);
+    padding: 7px 2px;
+}
+.accueil_appel_benevolat{
+    display: flex;
+    background-color: rgb(222, 222, 222);
+    align-items: center;
+}
+
+.accueil_texte_benevolat{
+    margin: 20px;
+    width: 50%;
+}
+
+.accueil_parole_adoptant{
+    display: flex;
+    align-items: center;
+}
+.accueil_texte_parole_adoptant{
+    width: 50%;
+    margin: 20px;
+}
+.accueil_texte_parole_adoptant h2{
+    background-color: rgb(168, 193, 193);
+    padding: 7px 2px;
+}
+
+.accueil_boutique{
+    display: flex;
+    align-items: center;
+}
+.accueil_texte_boutique{
+    margin: 20px;
+    width: 50%;
+}
+.accueil_texte_boutique h2{
+    background-color: rgb(168, 193, 193);
+    padding: 7px 2px;
+}
+/*___________________________________________________________________________________________________________________________*/
+/*Aide par Chat GPT pour le caroussel*/
+.carousel {
+    width: 600px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* CHAQUE IMAGE = 100% DU CARROUSEL */
+.slides img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slides video {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Radios cachés */
+input[type="radio"] {
+    display: none;
+}
+
+/* Déplacement des slides */
+#s1:checked ~ .slides { transform: translateX(0); }
+#s2:checked ~ .slides { transform: translateX(-100%); }
+#s3:checked ~ .slides { transform: translateX(-200%); }
+
+/* Déplacement des slides */
+#s4:checked ~ .slides { transform: translateX(0); }
+#s5:checked ~ .slides { transform: translateX(-100%); }
+#s6:checked ~ .slides { transform: translateX(-200%); }
+
+/* Déplacement des slides */
+#s7:checked ~ .slides { transform: translateX(0); }
+#s8:checked ~ .slides { transform: translateX(-100%); }
 
 
+/* Flèches */
+.arrows label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
 
+/* Position */
+.prev { left: 10px; }
+.next { right: 10px; }
 
+/* Affichage des bonnes flèches selon la slide */
+#s1:checked ~ .arrows .s1,
+#s2:checked ~ .arrows .s2,
+#s3:checked ~ .arrows .s3 {
+    display: block;
+}
+#s4:checked ~ .arrows .s4,
+#s5:checked ~ .arrows .s5,
+#s6:checked ~ .arrows .s6 {
+    display: block;
+}
 
-
-
-
-
-
-
-
-
+#s7:checked ~ .arrows .s7,
+#s8:checked ~ .arrows .s8 {
+    display: block;
+}
+/*___________________________________________________________________________________________________________________________*/
 
 
 
@@ -313,5 +473,35 @@ footer a img{
 
     .bloc_centre{
         padding: 25px 10px;
+    }
+
+    .carousel{
+        width: 100%;
+    }
+
+    .accueil_calendrier{
+        display: block;
+    }
+    .accueil_img_calendrier{
+        width: 100%;
+        height: auto;
+    }
+    .accueil_appel_benevolat{
+        display: block;
+    }
+    .accueil_texte_benevolat{
+        width: 90%;
+    }
+    .accueil_parole_adoptant{
+        display: block;
+    }
+    .accueil_texte_parole_adoptant{
+        width: 90%;
+    }
+    .accueil_boutique{
+        display: block;
+    }
+    .accueil_texte_boutique{
+        width: 90%;
     }
 }
