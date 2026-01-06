@@ -690,6 +690,68 @@ body{
     font-size: 1.5rem;
     text-transform: uppercase;
 }
+.temoin_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/rda (6).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.temoin_titre_texte{
+    max-width: 600px;
+    padding-left: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50px;                 
+}
+.temoin_texte{
+    text-align: center;
+}
+
+
+.temoin_textes{
+    display: flex;
+    align-items: center;
+}
+    
+.temoignage_texte{
+    width: 40%;
+    padding: 25px;
+}
+.temoin_img_textes{
+    padding:0 0 0 20%;
+    width: 30%;
+}
+.temoin_img_textes img{
+    width: 100%;
+}
+.temoin_textes h2{
+    color: rgb(255, 72, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*___________________________________________________________________________________________________________________________*/
@@ -810,6 +872,11 @@ footer a img{
 
 
 /* Responsive */
+@media screen and (max-width: 1200px){
+    .bloc_centre{
+        padding: 25px 30px;
+    }
+}
 @media screen and (max-width: 700px) {
 
     nav {
@@ -944,9 +1011,6 @@ footer a img{
     .perdu_img_textes img{
         width: 100%;
     }
-    .perdu_textes h2{
-        color: rgb(255, 72, 0);
-    }
     .perdu_icones_textes{
         width: 75px;
         justify-content: center;
@@ -960,6 +1024,24 @@ footer a img{
     .grille-images {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .temoin_titre_texte{
+        padding-left: 20px;
+        max-width: 50%;
+        top : 40%;
+    }
+    .temoin_textes{
+        display: block;
+    }
+    .temoignage_texte{
+        width: 90%;
+        text-align: center;
+    }
+    .temoin_img_textes{
+        width: 100%;
+    }
+    .temoin_img_textes img{
+        width: 100%;
+    }
+
 }
 
