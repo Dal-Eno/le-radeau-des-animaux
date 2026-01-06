@@ -664,7 +664,6 @@ body{
     position: relative;
     aspect-ratio: 1 / 1;   
     overflow: hidden;
-    background: #ccc;
 }
 
 .carte img {
@@ -738,14 +737,97 @@ body{
 .temoin_textes h2{
     color: rgb(255, 72, 0);
 }
+.qui_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/zzz\ \(9\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.qui_titre_texte{
+    max-width: 600px;
+    padding-left: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50px;                 
+}
+.qui_texte1{
+    text-align: center;
+}
+.qui_texte1 h2,
+.qui_texte1 h3{
+    color: rgb(255, 72, 0);
+}
+.qui_texte2{
+    display: flex;
+    align-items: center;
+}
+.qui_texte2 img{
+    width: 500px;
+    height: auto;
+}
+.qui_texte2 p{
+    padding: 0 20px;
+}
+.qui_texte3{
+    text-align: center;
+    background-color: rgb(168, 193, 193);
+}
+.qui_animaux{
+    display: flex;
+    text-align: center;
+}
+.qui_animaux h3{
+    color: rgb(255, 72, 0);
+}
+.qui_chat{
+    width: 50%;
+    
+}
+.qui_chat img{
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    object-fit: cover;
+}
+.qui_chien{
+    width: 50%;
+}
+.qui_chien img{
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    object-fit: cover;
+}
 
-
-
-
-
-
-
-
+.qui_texte4{
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("images/rda (9).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
 
 
@@ -1041,6 +1123,14 @@ footer a img{
     }
     .temoin_img_textes img{
         width: 100%;
+    }
+    .qui_titre_texte{
+        padding-left: 20px;
+        max-width: 50%;
+        top : 35%;
+    }
+    .qui_animaux{
+        display: block;
     }
 
 }
