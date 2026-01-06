@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 /*NAV = CONTENU DU MENU*/
 nav{
     background: rgb(168, 193, 193) ;
@@ -523,6 +528,109 @@ body{
     color: rgb(255, 72, 0);
 }
 
+.chat_chaton{
+    height: 400px;
+    background:
+        linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ),
+     url("images/rda(32).webp");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.perdu_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/rda (9).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.perdu_titre_texte{
+    max-width: 600px;
+    padding-left: 150px;
+    position: absolute;
+    top: 45%;
+    left: 50px;                 
+}
+.perdu_ancre{
+    text-align: center;
+}
+.perdu_grille {
+    display: grid;
+    /*Aide Chat GPT pour la disposition*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+.carre {
+    background: rgb(168, 193, 193);
+    aspect-ratio: 1 / 1;   /*pour faire un carré parfait au lieu de with et heigt */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+
+}
+.perdu_grille a{
+    text-decoration: none;
+    color: black;
+}
+.carre img {
+    width: 100px;
+    height: 100px;
+}
+
+.perdu_textes{
+    display: flex;
+    align-items: center;
+}
+    
+.perdu_texte{
+    width: 40%;
+    padding: 25px;
+}
+.perdu_img_textes{
+    width: 50%;
+}
+.perdu_img_textes img{
+    width: 100%;
+}
+.perdu_textes h2{
+    color: rgb(255, 72, 0);
+}
+.perdu_icones_textes{
+    width: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 
 
 
@@ -746,5 +854,43 @@ footer a img{
         padding-left: 20px;
         max-width: 50%;
         top : 45%;
+    }
+    .chien_pictos{
+        display: block;
+    }
+    .chien_picto{
+        width: 90%;
+    }
+    .perdu_titre_texte{
+        padding-left: 20px;
+        max-width: 50%;
+        top : 40%;
+    }
+    .perdu_grille {
+        gap: 20px;
+    }
+    .carre img {
+        width: 80px;
+        height: 80px;
+    }
+    .perdu_textes{
+        display: block;
+    }
+    .perdu_texte{
+        width: 90%;
+    }
+    .perdu_img_textes{
+        width: 100%;
+    }
+    .perdu_img_textes img{
+        width: 100%;
+    }
+    .perdu_textes h2{
+        color: rgb(255, 72, 0);
+    }
+    .perdu_icones_textes{
+        width: 75px;
+        justify-content: center;
+        align-items: center;
     }
 }
