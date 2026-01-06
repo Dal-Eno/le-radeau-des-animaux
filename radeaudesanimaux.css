@@ -157,6 +157,10 @@ body{
     background: white;
     padding: 0% 20% 0% 20%;
 }
+.espaceur30{
+    height: 30px;
+    background-color: transparent;
+}
 .espaceur50{
     height: 50px;
     background-color: transparent;
@@ -169,7 +173,16 @@ body{
     color: rgb(255, 72, 0);
 }
 
-
+.btn_orange{
+    text-decoration: none;
+    padding: 10px 25px;
+    background: rgb(255, 72, 0);
+    color: white;
+    border-radius: 20px;
+}
+.btn_orange:hover{
+    background-color: rgb(255, 123, 71);
+}
 
 
 
@@ -270,6 +283,217 @@ body{
     background-color: rgb(168, 193, 193);
     padding: 7px 2px;
 }
+
+.contact_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/rda(7).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.contact_titre_texte{
+    max-width: 600px;
+    padding-left: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50px;                 
+}
+
+.contact_prise {
+    display: flex;
+    gap: 40px;              
+    max-width: 1200px;
+    margin: 80px auto;      
+    padding: 0 20px;
+}
+
+.contact_infos {
+    flex: 1; 
+    background-color: rgb(168, 193, 193); 
+    padding: 2%;             
+}
+
+.contact_form {
+    flex: 1;            
+}
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid rgb(168, 193, 193);
+    box-sizing: border-box;
+}
+
+.contact_form textarea { 
+    /*Aide chat gpt*/
+    resize: vertical;
+}
+.contact_form button {
+    align-self: flex-start; 
+    padding: 10px 25px;
+    background: rgb(255, 72, 0);
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact_rs{
+    display: flex;
+    background-color: rgb(168, 193, 193);           
+    max-width: 1150px;
+    margin: 20px auto;      
+    padding: 5px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.don_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/rda (4).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.don_titre_texte{
+    max-width: 600px;
+    padding-left: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50px;                 
+}
+
+.don_aide_titre{
+    text-align: center;
+    size: 2rem;
+}
+
+.don_paiement {
+    display: flex;
+    gap: 40px;              
+    max-width: 1200px;
+    margin: 80px auto;      
+    padding: 0 20px;
+}
+
+.don_cheque {
+    flex: 1; 
+    background-color: rgb(168, 193, 193); 
+    padding: 2%;    
+    text-align: center;         
+}
+
+.don_ligne {
+    flex: 1; 
+    background-color: rgb(168, 193, 193); 
+    padding: 2%;   
+    text-align: center;          
+}
+.don_img{
+    width: 100%;
+}
+.btn_orange{
+    text-decoration: none;
+    padding: 10px 25px;
+    background: rgb(255, 72, 0);
+    color: white;
+    border-radius: 20px;
+}
+.btn_orange:hover{
+    background-color: rgb(255, 123, 71);
+}
+.don_sert{
+    text-align: center;
+}
+
+.don_sert_img{
+    width: 30%;
+    height: auto;
+}
+
+.chien_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/rda(24).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.chien_titre_texte{
+    max-width: 600px;
+    padding-left: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50px;                 
+}
+.chien_texte1 h2{
+    color: rgb(255, 72, 0);
+}
+.chien_texte2{
+    display: flex;
+    align-items: center;
+}
+.chien_texte2_img{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+.chien_texte2_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    object-position: center; 
+}
+.chien_texte2_text{
+    margin:0 0 0 10px;
+}
+.chien_texte3{
+    text-align: center;
+}
+.chien_texte4{
+    background-color: rgb(168, 193, 193);
+    padding: 50px 20%;
+}
+
+
+
+
+
+
+
 /*___________________________________________________________________________________________________________________________*/
 /*Aide par Chat GPT pour le caroussel*/
 .carousel {
@@ -354,50 +578,6 @@ input[type="radio"] {
     display: block;
 }
 /*___________________________________________________________________________________________________________________________*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -503,5 +683,36 @@ footer a img{
     }
     .accueil_texte_boutique{
         width: 90%;
+    }
+    .contact_titre_texte{
+        padding-left: 20px;
+        max-width: 50%;
+        top : 30%;
+    }
+    .contact_prise{
+        display: block;
+        margin: 0;
+    }
+    .contact_form{
+        margin-top: 50px;
+    }
+    .don_titre_texte{
+        padding-left: 20px;
+        max-width: 50%;
+        top : 45%;
+    }
+    .don_paiement{
+        display: block;
+    }
+    .don_ligne{
+        margin-top: 50px;
+    }
+    .don_sert{
+        display: block;
+    }
+    .chien_titre_texte{
+        padding-left: 20px;
+        max-width: 50%;
+        top : 45%;
     }
 }
