@@ -183,8 +183,16 @@ body{
 .btn_orange:hover{
     background-color: rgb(255, 123, 71);
 }
-
-
+.btn_bleu{
+    background-color: rgb(168, 193, 193);
+    padding:10px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;  
+}
+.btn_bleu:hover{
+    background-color : rgb(115, 145, 145);
+}
 
 
 
@@ -232,13 +240,6 @@ body{
     width: auto;
 }
 
-.btn_bleu{
-    background-color: rgb(168, 193, 193);
-    padding: 5px 20px;
-    text-decoration: none;
-    border-radius: 20px;
-    color: white;  
-}
 .accueil_combat_maltraitance h2{
     padding: 10px 0;
     font-size: 2rem;
@@ -452,6 +453,23 @@ body{
     position: relative;
     color: white;
 }
+.chat_titre{
+    height: 300px;
+     background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url("images/rda (1).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
 .chien_titre_texte{
     max-width: 600px;
     padding-left: 150px;
@@ -487,9 +505,23 @@ body{
     background-color: rgb(168, 193, 193);
     padding: 50px 20%;
 }
-
-
-
+.chien_pictos{
+    display: flex;
+    text-align: center;
+}
+.chien_picto{
+    width: 30%;
+    padding: 10px;
+}
+.chien_pic {
+    width: 100px;
+}
+.chien_texte5{
+    text-align: center;
+}
+.chien_texte5 h2{
+    color: rgb(255, 72, 0);
+}
 
 
 
