@@ -1114,7 +1114,21 @@ footer a img{
     nav ul li.open > ul {
         display: block;
     }
-
+    footer{
+        display: block;
+    }
+    .logo_footer{
+        padding: 10px 50px ;
+    }
+    .contacts{
+        padding: 10px 50px ;
+    }
+    .horaires{
+        padding: 10px 50px;
+    }
+    .reseauxsociaux{
+        padding: 10px 50px;
+    }
     .bloc_centre{
         padding: 25px 10px;
     }
