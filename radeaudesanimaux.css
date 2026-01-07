@@ -995,8 +995,14 @@ body{
     padding: 20px 0;
     background-attachment: fixed;
 }
-
-
+.contrat_adopt{
+    text-align: center;
+}
+.contrat_btn2{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
 
 
 
@@ -1378,6 +1384,15 @@ footer a img{
         padding-left: 20px;
         max-width: 50%;
         top : 40%;
+    }
+    .contrat_btn2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btndecontrat {
+        width: 300px;
+        text-align: center;
     }
 }
 
